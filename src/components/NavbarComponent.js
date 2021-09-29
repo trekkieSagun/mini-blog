@@ -1,31 +1,38 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
   return (
-    <div>
+    <div className="navbar-content">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand>
+            <Link to="/">Mini Blog</Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/post">Posts</Nav.Link>
+              <Nav.Link>
+                <Link to="/">Home</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/posts">Posts</Link>
+              </Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link
                 href="/create"
                 style={{
-                  color: "whitesmoke",
-                  backgroundColor: "red",
-                  border: "1px solid white",
+                  color: "white",
+                  backgroundColor: "green",
+
                   borderRadius: "5px",
                   fontSize: "14px",
                   fontWeight: "600",
                 }}
               >
-                Create new Post
+                <Link to="/create">Create new Post</Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -1,37 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import BlogList from "./BlogList";
+import loading from "./loading.gif";
+import useFetch from "./useFetch";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState([
-    {
-      title: "blog1",
-      body: "There are many variations of passages suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable",
-      author: "Tony Bahadur Stark",
-      id: 1,
-    },
-    {
-      title: "blog2",
-      body: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable",
-      author: "Captain Bahadur America",
-      id: 2,
-    },
-    {
-      title: "blog3",
-      body: "There are many variations of passages of Lorem Ipsum available, which don't look even slightly believable",
-      author: "Thor Prasad",
-      id: 3,
-    },
-  ]);
+  const {
+    data: blogs,
+    isLoading,
+    error,
+  } = useFetch("http://localhost:8000/blogs");
+
+  // const handleDelete = (id) => {
+  //   const updatedBlogs = blogs.filter((item) => item.id !== id);
+  //   setBlogs(updatedBlogs);
+  // };
+
   return (
     <div>
-      <h1>Home Page</h1>
       <div className="home">
-        {blogs.map((item, index) => (
-          <div className="blog-preview" key={index}>
-            <h2>{item.title}</h2>
-            <p>{item.body}</p>
-            <p>Written By. {item.author}</p>
-          </div>
-        ))}
+        {error && <div>{error}</div>}
+        {isLoading && <img src={loading} alt="No preview available" />}
+        {blogs && <BlogList blogs={blogs} title="All Posts" />}
       </div>
     </div>
   );

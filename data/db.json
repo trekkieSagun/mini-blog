@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "HuffPost (founded by Arianna Huffington):  $143.1 million",
+      "body": "Arianna Huffington, founder of The Huffington Post (rebranded to HuffPost in 2017), built her business up from a current affairs commentary blog to a full-blown media empire between 2005 and 2011, when The Huffington Post was acquired by AOL for $315 million. Huffington stayed on as Editor-in-Chief at The Huffington Post until 2016, when she moved on to her current day job as CEO of Thrive Global, a blog and training provider devoted to corporate wellness. (She’s also a board member at brands including Uber and Onex.)",
+      "author": "Captain Bahadur America ",
+      "id": 1
+    },
+    {
+      "title": "New one",
+      "body": "body new ",
+      "author": "Hulk Tsering Sherpa",
+      "id": 2
+    },
+    {
+      "title": "Moz ( Morgan McMurray)",
+      "body": "Moz has shown how a brand can sell products and services by making blogging a key part of its offering. Rather than bolting a blog onto its site and posting articles there occasionally; this brand has established one of the very best blogs in its industry. Thanks largely to its blogging, Moz has become a destination and focal point for the SEO community. There are many variations of passages of Lorem Ipsum available, which don't look even slightly believable",
+      "author": "Hulk Tsering Sherpa",
+      "id": 3
+    },
+    {
+      "title": "Posts added just now",
+      "body": "What do you mean by posts?\n(Entry 1 of 9) 1 : a piece (as of timber or metal) fixed firmly in an upright position especially as a stay or support : pillar, column. 2 : a pole or stake set up to mark or indicate something especially : a pole that marks the starting or finishing point of a horse race.\nWhat is horse race?",
+      "author": "Thor Bahadur",
+      "id": 4
+    }
+  ]
+}
